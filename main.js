@@ -23,22 +23,6 @@ window.addEventListener("scroll",()=>{
   header.classList.toggle("shadow", window.scrollY > 0);
 })
 
-var swiper = new Swiper(".control-images", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
 
 var swiper = new Swiper(".home", {
   spaceBetween: 30,
