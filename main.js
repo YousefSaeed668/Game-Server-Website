@@ -23,19 +23,6 @@ window.addEventListener("scroll",()=>{
   header.classList.toggle("shadow", window.scrollY > 0);
 })
 
-
-var swiper = new Swiper(".home", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
 var swiper = new Swiper(".control-images", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -52,6 +39,20 @@ var swiper = new Swiper(".control-images", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".home", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 let accordionItem = document.querySelectorAll(".accordion-item");
 
 accordionItem.forEach((item) => {
